@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+
+<body>
+   <div class="center">
+        <div class="home homes">
+            <ul id="home">
+
+            </ul>
+        </div>
+        <div class="nav" id="nav">
+            <ul>
+                <li class="home">
+                    <a href="./index.html#home" class="selected"></a>
+                </li>
+                <li class="resume">
+                    <a href="./index.html#resume"></a>
+                </li>
+                <li class="project">
+                    <a href="./index.html#project"></a>
+                </li>
+                <li class="contact last">
+                    <a href="./index.html#contact"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mask">
+        <div class="portfolio">
+            <div class="img">
+                <img src="./images/chinamobile_detail.jpg">
+            </div>
+            <div class="desc">
+                <div class="fix">
+                    <div class="title">
+                        <img src="./images/xqs.png">
+                    </div>
+                    <div class="txt">
+                        A product for brides and grooms to share their love stories to friends.</br>
+                        Upload your photos and articals,the product will generate a website on phone. </br>
+                        This product have been awarded the second prize by Tencent.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/lib/jquery.js"></script>
+    <script type="text/javascript" src="./js/lib/underscore.js"></script>
+    <script type="text/javascript" src="./js/lib/backbone.js"></script>
+    <script type="text/javascript" src="./js/view.js"></script>
+    <script type="text/javascript" src="./js/route.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/template" id="home_tem">
+        <li class="fullpage">
+            <div class="bac-pic">
+                <div class="clearfix">
+                    <div class="text">
+                        <span>COMPUTER SCIENCE IS MY MAJOR</span>
+                        <span>WHILE DESIGN IS MY HOBBY</span>
+                    </div>
+                    <img src="./images/bac.png" class="bac">
+                    <div class="text after">
+                        <span>I APPRECIATE THE COMBINATION</span>
+                        <span>OF ARTS AND SCIENCE</span>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <img src="./images/pic.png" class="pic">
+                </div>
+            </div>
+        </li>
+    </script>
+    <script type="text/template" id="resume_tem">
+        <li class="fullpage">
+            <div class="resume">
+                <div class="resume-head">
+                    <div class="about">
+                        <span class="name"></span>
+                        <span class="inc"></span>
+                    </div>
+                    <div class="contact">
+                        <span class="tel txt">+86 13521380523</span>
+                        <span class="mail txt">houyuxin1995@163.com</span>
+                    </div>
+                </div>
+                <div class="education">
+                    <div class="title"></div>
+                    <p class="txt grey">Beijing University of Posts and Telecommunitcations,Bachelor of Information Security</p>
+                    <p class="txt">have been continuously awarded scholarships for three years. </p>
+                </div>
+                <div class="experience">
+                    <div class="title"></div>
+                    <p class="txt grey">UI/UX Designer,AsiaInfo</p>
+                    <p class="txt">responsible for designing interactive prototypes and UI for China Mobile.</p>
+                    <p class="txt">provided visual design support for all aspects of the company.</p>
+                    <p class="txt grey sec">Marketing Promotion Assistant,Lenovo</p>
+                    <p class="txt">developed promotional plans weekly and analyzed competitive status.</p>
+                    <p class="txt">online operation for Lenovo.</p>
+                </div>
+                <div class="skills">
+                    <div class="title"></div>
+                    <div class="skill">
+                        <ul>
+                            <li>
+                                <span class="skill-name txt">Photoshop</span>
+                                <span class="progress">
+                                    <span class="num1"></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skill-name txt">Indesign</span>
+                                <span class="progress">
+                                    <span class="num1"></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skill-name txt">Axure</span>
+                                <span class="progress">
+                                    <span class="num1"></span>
+                                </span>
+                            </li>
+                            <li class="last">
+                                <span class="skill-name txt">HTML&CSS</span>
+                                <span class="progress">
+                                    <span class="num1"></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skill-name txt">Javascript</span>
+                                <span class="progress">
+                                    <span class="num1"></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skill-name txt">C Programming</span>
+                                <span class="progress">
+                                    <span class="num1"></span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="skill-name txt">JAVA</span>
+                                <span class="progress">
+                                    <span class="num1"></span>
+                                </span>
+                            </li>
+                            <li class="last">
+                                <span class="skill-name txt">Python</span>
+                                <span class="progress">
+                                    <span class="num1"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </script>
+    <script type="text/template" id="project_tem">
+        <li class="fullpage">
+            <div class="product">
+                <div class="list">
+                    <a href="./index.html#list/1">
+                        <div class="bac xqs"></div>
+                        <div class="bac bac2 xqs2"></div>
+                        <a href="">XIQUESHUO</a>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="./index.html#list/5">
+                        <div class="bac baocoo"></div>
+                        <div class="bac bac2 baocoo2"></div>
+                        <a href="">BAOCOO.COM</a>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="./index.html#list/2">
+                        <div class="bac lenovo"></div>
+                        <div class="bac bac2 lenovo2"></div>
+                        <a href="">LENOVO MOBILE UI</a>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="./index.html#list/6">
+                        <div class="bac chinamobile"></div>
+                        <div class="bac bac2 chinamobile2"></div>
+                        <a href="">CHINA MOBILE WAP</a>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="./index.html#list/3">
+                        <div class="bac lockscreen"></div>
+                        <div class="bac bac2 lockscreen2"></div>
+                        <a href="">RAIN LOCKSCREEN</a>
+                    </a>
+                </div>
+                <div class="list">
+                    <a href="./index.html#list/4">
+                        <div class="bac kaoshen"></div>
+                        <div class="bac bac2 kaoshen2"></div>
+                        <a href="">ONLINE LEARNING WEBSITE</a>
+                    </a>
+                </div>
+            </div>
+        </li>
+    </script>
+    <script type="text/template" id="detail_tem">
+        <div class="lists">
+            <div class="list_left">
+                <a href="./index.html#project"><img src="./images/arrow_left.png" class="arrow_left"></a>
+                <div class="title">
+                    <span>China Mobile Wap Design</span>
+                </div>
+                <div class="page">
+                    <img src="./images/arrow_top.png" class="arrow_top fade">
+                    <img src="./images/arrow_bottom.png" class="arrow_bottom">
+                </div>
+            </div>
+            <div class="list_right">
+                <img src="./content/<%= title%>-1.jpg" class="show_img">
+            </div>
+        </div>
+    </script>
+</body>
+
+</html>
