@@ -147,7 +147,7 @@
 }
 .center .home .product .list{
     width: 300px;
-    margin: 0 50px;
+    margin: 0 50px 50px 50px;
     float: left;
     text-align: center;
     position: relative;
@@ -157,6 +157,9 @@
     width: 300px;
     height: 216px;
     transition: all 2s ease-in-out;
+}
+.center .home .product .list a{
+    transition: all 0.7s ease-in-out;
 }
 .center .home .product .list .bac2{
     position: absolute;
@@ -211,6 +214,9 @@
     /*opacity: 1;*/
 }
 
+.center .home .product .list:hover a{
+    color: #3186fd;
+}
 @-webkit-keyframes 'fade' {
     0% {
         opacity: 1;
@@ -237,6 +243,8 @@
 .center .home .product .list a{
     font-size: 16px;
     color: #585855;
+    display: inline-block;
+    margin: 10px 0 0 0;
 }
 
 .center .resume{

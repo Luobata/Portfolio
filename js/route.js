@@ -1,12 +1,20 @@
 var Workspace = new (Backbone.Router.extend({
 
-  routes: {
-    "project" : "project",    
-    "resume" : "resume",  
-    "home" : "index",
-    "" : "index",  
-    "list/:query" : "list"
-  },
+    routes: {
+      "project" : "project",    
+      "resume" : "resume",  
+      "home" : "index",
+      "" : "index",  
+      "list/:query" : "list"
+    },
+    valueToString: {
+        0: 'XI QUE SHUO',
+        1: 'LENOVO SCHOOL',
+        2: 'RAIN LOCKSCREEN',
+        3: 'LOVE TREE',
+        4: 'BAOCOO WANG',
+        5: 'CHINA MOBILE WAP'
+    },
 
     project : function () {
                   center.template = _.template($('#project_tem').html());
@@ -32,7 +40,8 @@ var Workspace = new (Backbone.Router.extend({
     list : function (query) {
                // 作品详情页面
                params = {
-                   title: query
+                   title: query,
+                   text: this.valueToString[query-1]
                };
                center.template = _.template($('#detail_tem').html());
                center.query = query;
