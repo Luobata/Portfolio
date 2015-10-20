@@ -113,7 +113,7 @@ var Center = Backbone.View.extend({
             var x = -1200;
             self.css({
                 'transform' : 'translateX(' + x + 'px)',
-                'transition': 'all 0.5s ease-in-out'
+                'transition': 'all 0.3s ease-in-out'
             });
 
         }
